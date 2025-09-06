@@ -1,0 +1,197 @@
+/* RESET E BASE */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #fdfdfd;
+    color: #202122;
+}
+
+/* LINKS */
+a {
+    color: #0645ad;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* HEADER */
+header {
+    background: #ffffff;
+    border-bottom: 1px solid #cdcdcd;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* BARRA LOGO */
+.logo img {
+    max-width: 180px;
+}
+
+/* BARRA DIVISÓRIA */
+.bar {
+    background-color: #f8f9fa;
+    padding: 12px 20px;
+    border-top: solid 1px #e0e0e0;
+    border-bottom: solid 1px #e0e0e0;
+    font-size: 14px;
+    color: #555;
+}
+
+/* CONTEÚDO PRINCIPAL */
+.content {
+    max-width: 1400px;
+    margin: auto;
+    display: grid;
+    gap: 2rem;
+    grid-template-areas: "sidebar main anchors";
+    grid-template-columns: 240px 1fr 220px;
+    padding: 20px;
+}
+
+/* SIDEBAR */
+.sidebar {
+    grid-area: sidebar;
+    border-right: 1px solid #ddd;
+    padding-right: 15px;
+    font-size: 15px;
+}
+.sidebar h2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.sidebar ul {
+    padding-left: 0;
+}
+.sidebar li {
+    margin-bottom: 8px;
+}
+
+/* ARTIGO PRINCIPAL */
+.main {
+    grid-area: main;
+    padding: 0 15px;
+}
+.main h1 {
+    font-size: 28px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 8px;
+    margin-top: 0;
+}
+.main h2 {
+    font-size: 20px;
+    margin-top: 25px;
+    border-bottom: 1px solid #e3e3e3;
+    padding-bottom: 4px;
+}
+.main p {
+    margin-bottom: 16px;
+}
+.main ul {
+    margin: 10px 0 20px 20px;
+    list-style: disc;
+}
+figure {
+    text-align: center;
+    margin: 20px 0;
+}
+figcaption {
+    font-size: 13px;
+    color: #555;
+    margin-top: 5px;
+}
+
+/* ANCHORS */
+.anchors {
+    grid-area: anchors;
+    border-left: 1px solid #ddd;
+    padding-left: 15px;
+    font-size: 14px;
+}
+.anchors h2 {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.anchors ul {
+    padding-left: 0;
+}
+.anchors li {
+    margin-bottom: 6px;
+}
+
+/* FOOTER */
+.footer {
+    margin-top: 40px;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    background: #f8f9fa;
+    border-top: 1px solid #ddd;
+    color: #555;
+}
+/* INFOBOX (tipo Wikipedia) */
+.infobox {
+    border: 1px solid #a2a9b1;
+    background: #f8f9fa;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+.infobox h3 {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 0;
+}
+.infobox figure {
+    text-align: center;
+    margin: 10px 0;
+}
+.infobox table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+.infobox th {
+    text-align: left;
+    padding: 4px;
+    background: #eaecf0;
+    font-weight: bold;
+    width: 40%;
+    border: 1px solid #a2a9b1;
+}
+.infobox td {
+    padding: 4px;
+    border: 1px solid #a2a9b1;
+}
+
+/* TOC (Tabela de conteúdos) */
+.toc {
+    border: 1px solid #a2a9b1;
+    background: #f8f9fa;
+    padding: 10px;
+    font-size: 14px;
+}
+.toc h3 {
+    font-size: 15px;
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+.toc ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.toc li {
+    margin: 4px 0;
+}
+.toc a {
+    color: #0645ad;
+    text-decoration: none;
+}
+.toc a:hover {
+    text-decoration: underline;
+}
